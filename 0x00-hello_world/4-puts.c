@@ -1,7 +1,7 @@
 #include <stdio.h>`
 /**
- * main - prints "Programminng is like building a multinational puzzle fonction
- * follow by new line"
+ * main - prints Programminng is like building a multinational puzzle fonction
+ * follow by new line
  * Return: 0
  */
 int main(void)
