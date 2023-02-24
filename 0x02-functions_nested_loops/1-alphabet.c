@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * print_alphabet - alphabet is print followed by a new line
@@ -9,12 +9,13 @@
 
 void print_alphabet(void)
 {
-	letter[26] = "abcdefghijklmnopqrstuvwxyz";
-
-	i = 0;
+	char letter[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i = 0;
 
 	for (i = 0; i < 26; i++)
 	{
 		_putchar(letter[i]);
 	}
+
+	_putchar('\n');
 }
