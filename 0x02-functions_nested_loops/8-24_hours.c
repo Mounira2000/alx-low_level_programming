@@ -16,19 +16,19 @@ void jack_bauer(void)
 		{
 			if (minutes < 10 && heures < 10)
 			{
-				printf("0%d:0%d", heures, minutes);
+				printf("0%d:0%d\n", heures, minutes);
 			}
 			else if (minutes < 10 && heures >= 10)
 			{
-				printf("%d:0%d", heures, minutes);
+				printf("%d:0%d\n", heures, minutes);
 			}
 			else if (heures < 10  && minutes >= 10)
 			{
-				printf("0%d:%d", heures, minutes);
+				printf("0%d:%d\n", heures, minutes);
 			}
 			else
 			{
-				printf("%d:%d", heures, minutes);
+				printf("%d:%d\n", heures, minutes);
 			}
 		}
 	}
