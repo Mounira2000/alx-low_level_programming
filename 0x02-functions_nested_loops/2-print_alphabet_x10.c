@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - print_alphabet_x10 this function will write 10times the alphabet
+ * print_alphabet_x10 - this function will write 10times the alphabet
  *
  * Return: 0
  */
@@ -17,7 +17,7 @@ void print_alphabet_x10(void)
 
 	for (j = 0; j < 10; j++)
 	{
-		for (i = 1; i <= 26; i++)
+		for (i = 0; i <= 26; i++)
 		{
 			_putchar (letters[i]);
 		}
