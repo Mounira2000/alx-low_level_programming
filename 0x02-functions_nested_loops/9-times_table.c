@@ -1,42 +1,44 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * times_table - write the mutiplication table
- * return: nothing
+ * times_table - print the table from 0 to 9
+ *
+ *
+ * Return: void
+ *
  */
-
 void times_table(void)
 {
-	int i;
-	int j;
+	int x, y, z, i, n;
 
-	for (i = 0; i < 10; i++)
+	for (x = 0; x <= 9; x++)
 	{
-		for (j = 0; j <= 9; j++)
+		for (y = 0; y <= 9; y++)
 		{
-			if (i*j <= 9)
-				if  (j == 9)
-				{
-					printf("%d$", i * j);
-				}
-				else
-				{
-					printf("%d,  ", i * j);
-				}
+			z = x * y;
+
+			if (z > 9)
+			{
+				i = z % 10;
+				n = (z - i) / 10;
+
+				_putchar(44);
+				_putchar(32);
+				_putchar(n + '0');
+				_putchar(i + '0');
+			}
 			else
 			{
-				if  (j == 9)
+				if (y != 0)
 				{
-					printf("%d$", i * j);
-				}
-				else
-				{
-					printf("%d,  ", i * j);
+					_putchar(44);
+					_putchar(32);
+					_putchar(32);
 				}
 
+				_putchar(z + '0');
 			}
 		}
-		printf("\n");
 
+		_putchar('\n');
 	}
 }

@@ -1,26 +1,19 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - this function will write 10times the alphabet
- *
- * Return: 0
- */
+* print_alphabet_x10 - prints alphabets in lower case 10 times
+*
+*/
 
 void print_alphabet_x10(void)
 {
-	char letters[26] = "abcdefghijklmnopqrstuvwxyz";
-
 	int i;
-	int j;
+	char c;
 
-
-
-	for (j = 0; j < 10; j++)
+	for (i = 0; i < 10; i++)
 	{
-		for (i = 0; i < 26; i++)
-		{
-			_putchar (letters[i]);
-		}
-		_putchar ('\n');
+		for (c = 97; c <= 122; c++)
+			_putchar(c);
+		_putchar('\n');
 	}
 }

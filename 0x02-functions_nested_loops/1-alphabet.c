@@ -1,21 +1,15 @@
 #include "main.h"
 
 /**
- * print_alphabet - alphabet is print followed by a new line
- *
- *
- * Return: 0
- */
-
+* print_alphabet - Alphabet in lowercase
+*/
 void print_alphabet(void)
 {
-	char letter[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0;
+	char c;
 
-	for (i = 0; i < 26; i++)
+	for (c = 97; c <= 122; c++)
 	{
-		_putchar(letter[i]);
+		_putchar(c);
 	}
-
 	_putchar('\n');
 }

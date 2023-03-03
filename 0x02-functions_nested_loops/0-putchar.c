@@ -1,25 +1,16 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
- * main - check the code
- *
- * Return: Always 0.
- *
- */
-
+* main - Entry point of the program
+* Return: 0 success
+*/
 
 int main(void)
 {
-	char word[8] = "_putchar";
-
-	int i = 0;
+	char str[] = "_putchar";
+	int i;
 
 	for (i = 0; i < 8; i++)
-	{
-		putchar(word[i]);
-	}
-	putchar('\n');
-
+		_putchar(str[i]);
+	_putchar('\n');
 	return (0);
 }

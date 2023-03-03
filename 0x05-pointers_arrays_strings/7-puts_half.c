@@ -1,32 +1,21 @@
 #include "main.h"
 
 /**
- * puts_half - print the second half of a function
- * @str: - variable
- * Return: - numbers
+ * puts_half - prints the second half of the string
+ * @str: the string reference
+ * Return: 0
  */
 
 void puts_half(char *str)
 {
-	int count = 0;
-	int n;
 	int i;
 
-	for (; *str++;)
-	{
-		count++;
-	}
-	if (count % 2 == 0)
-	{
-		n = count / 2;
-	}
-	else
-	{
-		n = (count - 1) / 2;
-	}
-
-	for (i = n; i <= count; i++)
+	for (i = 0; str[i] != '\0'; i++)
+		;
+	i++;
+	for (i /= 2; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
 	}
+	_putchar('\n');
 }

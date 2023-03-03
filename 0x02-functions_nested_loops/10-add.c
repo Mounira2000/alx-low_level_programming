@@ -1,13 +1,12 @@
 #include "main.h"
-
-
 /**
- * add - the add function add two number
- * @a: variable
- * @b: variable2
- * Return: the result
+ * add - add two integers
+ * @a: whole
+ * @b: whole
+ *
+ *
+ * Return: a + b
  */
-
 int add(int a, int b)
 {
 	return (a + b);
