@@ -1,7 +1,7 @@
  #include "main.h"
 
 /**
- * _memcpy - func
+ * _strchr - func
  * @dest: : - pointrt
  * @src: - char
  * @n: interger
@@ -16,7 +16,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	for (i = 0; i < q; i++)
 	{
 		dest[i] = src[i];
-		q--;
+		n--;
 	}
 	return (dest);
 }
