@@ -2,6 +2,7 @@
 #include "stdlib.h"
 
 /**
+ * alloc_grid - function
  * @width: var
  * @height: var
  * Return: chat
