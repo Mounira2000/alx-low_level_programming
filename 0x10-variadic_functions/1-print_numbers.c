@@ -6,6 +6,7 @@
  * print_numbers - is the function
  * @separator: var
  * @n: var
+ * @...: var list
  * Return: nothing
  */
 
@@ -23,7 +24,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		printf("%d", val);
 
 
-		if (separator == NULL)
+		if (separator == NULL && separator != 0)
 			printf("%s ", separator);
 	}
 
