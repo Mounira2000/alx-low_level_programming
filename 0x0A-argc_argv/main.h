@@ -2,6 +2,7 @@
 #define MAIN_H
 
 int _putchar(char c);
-int exo_0(int argc, char* arg[]);
+int main(int argc, char *argv[]);
+
 
 #endif
