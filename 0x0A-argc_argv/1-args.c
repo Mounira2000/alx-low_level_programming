@@ -1,13 +1,16 @@
 #include "main.h"
 
 /*
- * main - function
+ * main1 - function
+ *
  * @argc: var
  * @argv: var
  * Return: int
  */
 
-int main(int argc, char *argv[])
+int main1(int argc, char __attribute__((unused)) *argv[])
 {
-	_putchar()
+	_putchar(argc - 1);
+
+	return (0);
 }
